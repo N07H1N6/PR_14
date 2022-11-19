@@ -13,17 +13,17 @@ namespace PR_14
 {
     class Program
     {
-        unsafe static double MethodPolDel(double *a, double *b, double *eps)
+        unsafe static double MethodPolDel(double* a, double* b, double* eps)
         {
             double* c;//с-середина,выделение памяти под переменную типа double
             double c1 = 0.0;
             c = &c1;
-            while(Math.Abs(*a-*b)>=*eps)
+            while (Math.Abs(*a - *b) >= *eps)
             {
                 *c = (*a + *b) / 2;//расчет середины отрезка[a,b]
                 //расчет новых границ отрезка
 
-                if ((Math.Tan(3.4 * Math.Pow(*a, 3.0)) + Math.Cos(*a + 1.2)) *(Math.Tan(3.4 * Math.Pow(*c, 3.0)) + Math.Cos(*c + 1.2))  <= 0)//Для a и с
+                if ((Math.Tan(3.4 * Math.Pow(*a, 3.0)) + Math.Cos(*a + 1.2)) * (Math.Tan(3.4 * Math.Pow(*c, 3.0)) + Math.Cos(*c + 1.2)) <= 0)//Для a и с
                 { *b = *c; }// новый отрезок [a,c]  
                 else
                 { *a = *c; }   // новый отрезок [c,b]                      
@@ -36,7 +36,7 @@ namespace PR_14
             Console.WriteLine("Здравствуйте");
             Console.WriteLine("Практическая работа №14");
             Console.WriteLine("Используя метод половинного деления,найти корень уравнения.\n");
-            double *a;double *b; double *eps;
+            double* a; double* b; double* eps;
             try
             {
                 //Ввод данных
@@ -53,7 +53,11 @@ namespace PR_14
                 double x = MethodPolDel(a, b, eps);
                 Console.WriteLine("Корень уравнения x = {0:0.#####}", x);
             }
-            catch(InvalidCastException e)
+            catch (InvalidCastException e)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Ошибка: пользователь ввел букву!" + e.Message);
+            }
             catch (Exception e)
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;

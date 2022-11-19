@@ -1,7 +1,8 @@
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\bin\Debug\PR_14.exe.config
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\bin\Debug\PR_14.exe
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\bin\Debug\PR_14.pdb
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\obj\Debug\PR_14.csproj.AssemblyReference.cache
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\obj\Debug\PR_14.csproj.CoreCompileInputs.cache
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\obj\Debug\PR_14.exe
-D:\Users\1210N-9\Documents\2-ИСП\ОП\Подгруппа 1\Кондаков\PR_14\obj\Debug\PR_14.pdb
+C:\Users\pavel\Documents\VS22\PR_14\bin\Debug\PR_14.exe.config
+C:\Users\pavel\Documents\VS22\PR_14\bin\Debug\PR_14.exe
+C:\Users\pavel\Documents\VS22\PR_14\bin\Debug\PR_14.pdb
+C:\Users\pavel\Documents\VS22\PR_14\obj\Debug\PR_14.csproj.AssemblyReference.cache
+C:\Users\pavel\Documents\VS22\PR_14\obj\Debug\PR_14.csproj.SuggestedBindingRedirects.cache
+C:\Users\pavel\Documents\VS22\PR_14\obj\Debug\PR_14.csproj.CoreCompileInputs.cache
+C:\Users\pavel\Documents\VS22\PR_14\obj\Debug\PR_14.exe
+C:\Users\pavel\Documents\VS22\PR_14\obj\Debug\PR_14.pdb
