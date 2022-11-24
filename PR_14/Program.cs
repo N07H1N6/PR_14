@@ -46,17 +46,17 @@ namespace PR_14
                 Console.Write("Правая граница отрезка,b=");
                 double b1 = Convert.ToDouble(Console.ReadLine());
                 b = &b1;//взятие адреса переменной b1,хранящей значение левой границы отрезка
-                Console.Write("Точность расчетов,esp=");
+                Console.WriteLine("Ведите  значение eps, 0>=eps<=1");
                 double eps1 = Convert.ToDouble(Console.ReadLine());
                 eps = &eps1;//взятие адреса esp
-                //Вызов функции
+               //Вызов функции
                 double x = MethodPolDel(a, b, eps);
-                Console.WriteLine("Корень уравнения x = {0:0.#####}", x);
+                Console.WriteLine("Корень уравнения x = {0:0.#####}", x);                                
             }
-            catch (InvalidCastException e)
+            catch (FormatException fe)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Ошибка: пользователь ввел букву!" + e.Message);
+                Console.WriteLine("Ошибка: пользователь ввел букву!" + fe.Message);
             }
             catch (Exception e)
             {
